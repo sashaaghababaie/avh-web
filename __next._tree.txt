@@ -1,0 +1,19 @@
+1:"$Sreact.fragment"
+2:I[62208,["/_next/static/chunks/207aa4b12d6888fb.js","/_next/static/chunks/6b4228e061664064.js"],"ViewportBoundary"]
+4:I[62208,["/_next/static/chunks/207aa4b12d6888fb.js","/_next/static/chunks/6b4228e061664064.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[26042,["/_next/static/chunks/207aa4b12d6888fb.js","/_next/static/chunks/6b4228e061664064.js"],"IconMark"]
+:HL["/_next/static/chunks/5febde714d056a31.css","style"]
+:HL["/_next/static/media/202f69fb654d2e8e-s.p.7b953fae.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/5c27158bc5efb2d9-s.p.db674ee2.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/6fa46fa596aaf4bc-s.p.8ab915c3.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/702dcce5e58e3fe9-s.p.3098d8a3.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/d88fc5ebcdbec3b6-s.p.b5ae0f11.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/fd3f2d7cff5f3729-s.p.6cff3a18.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/AVH LOGO_WHITE.webp","image"]
+:HL["/AVH Facade-Hero.webp","image"]
+0:{"buildId":"4afybtmGEryGJ7f-24GbR","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"Home"}],["$","meta","1",{"name":"description","content":"Your premier destination for aviation excellence"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.4de6b71c.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L7","3",{}]]
