@@ -3,7 +3,7 @@
 import { BiSolidCameraMovie, BiSolidDish } from "react-icons/bi";
 import { BsHeadsetVr } from "react-icons/bs";
 import { PiAirplayFill } from "react-icons/pi";
-import { MdChair } from "react-icons/md";
+import { MdChair, MdDoorFront } from "react-icons/md";
 import { RiPresentationFill } from "react-icons/ri";
 import { useInView } from "@/hooks/useInView";
 
@@ -11,6 +11,13 @@ export default function FacilitiesSection() {
   const { ref: sectionRef, isInView: sectionInView } = useInView();
 
   const facilities = [
+    {
+      title: "Entrance",
+      description:
+        "Get all the information your need, Enjoy the aviation vibe.",
+      icon: <MdDoorFront />,
+      imageUrl: "/lobby.jpg",
+    },
     {
       title: "Main Lobby",
       description:

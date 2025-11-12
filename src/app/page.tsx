@@ -8,6 +8,11 @@ import MapSection from "@/components/map-section";
 import AerospacePavilionSection from "@/components/aerospace-pavilion-section";
 import ServicesSection from "@/components/services-section";
 import LogoSection from "@/components/logo-section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
 
 export default function Home() {
   return (

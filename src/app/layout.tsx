@@ -22,7 +22,11 @@ const titilliumWeb = Titillium_Web({
 });
 
 export const metadata: Metadata = {
-  title: "Aviation Hub (AVH)",
+  // title: "Aviation Hub (AVH)",
+  title: {
+    default: "AVH",
+    template: `%s | AVH`,
+  },
   description: "Your premier destination for aviation excellence",
 };
 

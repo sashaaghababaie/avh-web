@@ -49,7 +49,7 @@ export default function FirstSection() {
               <div className="w-full h-64 sm:h-80 md:h-96 bg-neutral-200 rounded-3xl overflow-hidden">
                 <div className="w-full h-full bg-linear-to-br from-brand to-brand/60 flex items-center justify-center text-white text-2xl">
                   <img
-                    src="/01.webp"
+                    src="/02.webp"
                     alt="AVH Interior-01"
                     className="w-full h-full object-cover"
                   />
@@ -71,7 +71,7 @@ export default function FirstSection() {
               <div className="w-full h-64 sm:h-80 md:h-96 bg-neutral-200 rounded-3xl overflow-hidden">
                 <div className="w-full h-full bg-linear-to-br from-neutral-600 to-neutral-800 flex items-center justify-center text-white text-2xl">
                   <img
-                    src="/02.webp"
+                    src="/01.webp"
                     alt="AVH Interior-02"
                     className="w-full h-full object-cover"
                   />

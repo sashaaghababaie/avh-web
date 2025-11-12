@@ -9,22 +9,22 @@ export default function MobileApp() {
 
   const slides = [
     {
-      title: "Book Facilities",
+      title: "Meet AVH App",
       description:
-        "Easily reserve lounges, conference rooms, and other facilities through our intuitive mobile app.",
-      image: "bg-gradient-to-br from-brand to-brand/60",
-    },
-    {
-      title: "Track Your Aircraft",
-      description:
-        "Monitor maintenance schedules and receive real-time updates about your aircraft.",
-      image: "bg-gradient-to-br from-brand to-brand/60",
+        "Everything you need to engage with your beloved AVH community.",
+      image: "/app1.webp",
     },
     {
       title: "Connect with Community",
       description:
-        "Network with other aviation professionals and stay updated with hub events.",
-      image: "bg-gradient-to-br from-brand to-brand/60",
+        "Network with other aviation professionals and stay updated with the news.",
+      image: "/app2.webp",
+    },
+    {
+      title: "Book Facilities",
+      description:
+        "Easily reserve lounges, conference rooms, and other facilities through our intuitive mobile app.",
+      image: "/app3.webp",
     },
   ];
 
@@ -60,13 +60,16 @@ export default function MobileApp() {
             }`}
             style={{ transitionDelay: sectionInView ? "0.3s" : "0s" }}
           >
-            <div className="relative w-full max-w-md mx-auto">
+            <div className="relative w-full sm:w-96 md:w-[500px] mx-auto">
               {/* Image Container */}
               <div
-                className={`w-full h-80 sm:h-96 md:h-[500px] ${slides[currentSlide].image} rounded-3xl overflow-hidden shadow-lg`}
+                className={`w-full sm:w-96 md:w-[500px] aspect-square rounded-3xl overflow-hidden shadow-lg`}
               >
                 <div className="w-full h-full flex items-center justify-center text-white text-4xl">
-                  Mobile App
+                  <img
+                    className="object-cover w-full h-full"
+                    src={slides[currentSlide].image}
+                  />
                 </div>
               </div>
 
@@ -147,3 +150,5 @@ export default function MobileApp() {
     </section>
   );
 }
+
+const slides = [];

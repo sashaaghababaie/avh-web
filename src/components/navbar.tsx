@@ -7,12 +7,12 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 shadow-md backdrop-blur-md bg-brand/10 shadow-black/20">
+    <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-md bg-brand/10 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/AVH LOGO.png" alt="Aviation Hub" className="w-14 mr-2" />
+            <img src="/avh-logo.png" alt="Aviation Hub" className="w-14 mr-2" />
           </Link>
 
           {/* Nav Links */}
@@ -49,7 +49,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-neutral-800 hover:text-neutral-700"
+              className="text-neutral-800 cursor-pointer hover:text-neutral-700"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
@@ -91,7 +91,7 @@ export default function Navbar() {
             <Link
               href="#facilities"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-neutral-800 hover:text-neutral-700 py-2"
+              className="w-full block text-neutral-800 hover:text-neutral-700 py-2"
             >
               Facilities
             </Link>
