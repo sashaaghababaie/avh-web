@@ -20,15 +20,15 @@ export default function ServicesSection() {
     },
     {
       title: "Aviation EDC",
-      subtitle: "Community-based activities",
+      subtitle: "Belonging, Engagement & Communicaton ",
       description:
         "Holding events that involve interested communities, students, modelers, pilots, or residents of aviation neighborhoods",
       icon: <FaHubspot />,
-      imageUrl: "/aviation-edc.webp",
+      imageUrl: "/imgs/edc.jpg",
     },
     {
       title: "Self Aviator",
-      subtitle: "Products of Belonging, Participation & Interaction",
+      subtitle: "Technical & Experimental learning services",
       description:
         "Interactive experiences and products creating a sense of 'belonging' in the place (personal flight passports, NFTs, membership badges, team workshops, and skill challenges)",
       icon: <BsPersonHeart />,
@@ -36,15 +36,15 @@ export default function ServicesSection() {
     },
     {
       title: "Certiflight",
-      subtitle: "Experience-Based Technical & Specialized Services",
+      subtitle: "Community based Activities",
       description:
         "Basic flight training, introduction to airplanes, simulator workshops, model repair, educational tours for schools and universities",
       icon: <FaAward />,
-      imageUrl: "/certiflight.webp",
+      imageUrl: "/imgs/workshop.jpg",
     },
     {
       title: "Aero style",
-      subtitle: "Creativity and Lifestyle Products in Aviation",
+      subtitle: "Creativity & Aviation Lifestyle",
       description:
         "Cultural-Lifestyle Activities: Product design, aviation-inspired fashion, music, food experiences, and designer brands",
       icon: <ImUserTie />,
@@ -94,10 +94,13 @@ export default function ServicesSection() {
                     <span className="items-center text-3xl text-brand">
                       {service.icon}
                     </span>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-black mb-3">
+                    <h2 className=" text-xl sm:text-2xl font-semibold text-black mb-1">
                       {service.title}
-                    </h3>
+                    </h2>
                   </div>
+                  <h3 className="text-base font-semibold text-black/70 mb-6">
+                    {service.subtitle}
+                  </h3>
                   <p className="text-neutral-600 leading-relaxed">
                     {service.description}
                   </p>

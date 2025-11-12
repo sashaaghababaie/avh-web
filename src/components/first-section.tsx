@@ -12,9 +12,10 @@ export default function FirstSection() {
           className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-black text-center mb-12 md:mb-16 animate-on-scroll ${
             sectionInView ? "visible" : ""
           }`}
-          style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
+          // style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
         >
-          What is AVH?
+          What is <span className="font-bold">AV</span>
+          <span className="font-bold text-brand">H </span>?
         </h2>
 
         {/* First Row: Text Left, Image Right */}
@@ -24,32 +25,36 @@ export default function FirstSection() {
               className={`flex-1 order-2 md:order-1 animate-on-scroll ${
                 sectionInView ? "visible" : ""
               }`}
-              style={{ transitionDelay: sectionInView ? "0.3s" : "0s" }}
+              style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
             >
-              <h2 className="text-xl md:text-2xl font-semibold text-neutral-700 mb-4">
+              {/* <h2 className="text-xl md:text-2xl font-semibold text-neutral-700 mb-4">
                 Experience & Engagement
-              </h2>
+              </h2> */}
               <p className="text-lg sm:text-xl text-neutral-700 leading-relaxed">
-                <span className="font-bold">AV</span>
-                <span className="font-bold text-brand">H </span>
-                is a comprehensive platform that brings together aviation
-                enthusiasts, professionals, and brands to connect, learn, and
-                share experiences. The center features entertainment,
-                educational, experiential, exhibition, and social spaces that
-                provide all aspects of the aviation experience in one unified
-                platform.
+                {/* <span className="font-bold">AV</span>
+                <span className="font-bold text-brand">H </span> */}
+                The Aviation Experience and Engagement Center was created to
+                fill a long-standing gap in Iran’s aviation community — the lack
+                of a shared space for enthusiasts, professionals, and newcomers
+                to connect. Previously limited to occasional events, the
+                community needed a place to learn, engage, and grow together.
+                This center was founded to foster conversation, hands-on
+                learning, and collaboration among all aviation roles. It
+                transforms interaction into culture and experience into
+                knowledge, serving as both a social and professional hub where
+                the future of Iranian aviation can take off.
               </p>
             </div>
             <div
               className={`flex-1 order-1 md:order-2 animate-on-scroll ${
                 sectionInView ? "visible" : ""
               }`}
-              style={{ transitionDelay: sectionInView ? "0.5s" : "0s" }}
+              // style={{ transitionDelay: sectionInView ? "0.5s" : "0s" }}
             >
               <div className="w-full h-64 sm:h-80 md:h-96 bg-neutral-200 rounded-3xl overflow-hidden">
                 <div className="w-full h-full bg-linear-to-br from-brand to-brand/60 flex items-center justify-center text-white text-2xl">
                   <img
-                    src="/02.webp"
+                    src="/lobby.jpg"
                     alt="AVH Interior-01"
                     className="w-full h-full object-cover"
                   />
@@ -60,7 +65,7 @@ export default function FirstSection() {
         </div>
 
         {/* Second Row: Image Left, Text Right */}
-        <div>
+        {/* <div>
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div
               className={`flex-1 order-1 animate-on-scroll ${
@@ -94,7 +99,7 @@ export default function FirstSection() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

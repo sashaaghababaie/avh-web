@@ -12,52 +12,53 @@ export default function FacilitiesSection() {
 
   const facilities = [
     {
-      title: "Entrance",
+      title: "Café - 100 sqm",
       description:
-        "Get all the information your need, Enjoy the aviation vibe.",
-      icon: <MdDoorFront />,
-      imageUrl: "/lobby.jpg",
-    },
-    {
-      title: "Main Lobby",
-      description:
-        "Relax in our luxurious lounges designed for comfort and productivity.",
+        "A cozy aviation-themed café serving beverages and light meals; also acts as a social interaction hub.",
       icon: <MdChair />,
-      imageUrl: "/Premium-Lounge.webp",
+      imageUrl: "/imgs/cafe.jpg",
     },
     {
-      title: "Conference Rooms",
+      title: "Restaurant - 100 sqm",
       description:
-        "State-of-the-art meeting spaces for your business needs (3 Conference Rooms)",
+        "Full-service dining area offering aviation-inspired menus and themed culinary experiences.",
       icon: <RiPresentationFill />,
-      imageUrl: "/conference-room.webp",
+      imageUrl: "/imgs/restaurant.jpg",
     },
     {
-      title: "Cafe & Restaurant",
-      description: "Enjoy a meal or a drink with your family and friends.",
+      title: "Meeting Room - 60 sqm",
+      description:
+        "Shared by different sections: 2 tables for the restaurant, 2 for the café, and 1 for the simulator lounge. Designed for business gatherings, private sessions, and group discussions",
       icon: <BiSolidDish />,
-      imageUrl: "/cafe-restaurant.webp",
+      imageUrl: "/imgs/meeting.jpg",
     },
     {
-      title: "Cinematheque",
+      title: "Simulation Lounge - 100 sqm",
       description:
-        "Watch the documentaries and movies about aviation and aerospace history.",
+        "Equipped with 3 high-end flight simulators, providing immersive aviation experiences and training sessions.",
       icon: <BiSolidCameraMovie />,
-      imageUrl: "/cinematheque.webp",
+      imageUrl: "/imgs/flight-simulator.webp",
     },
     {
-      title: "Game Station",
+      title: "Event Space - 80 sqm",
       description:
-        "Play digital and VR games with your family and friends (10 Game Stations)",
+        "Multi-purpose space for festivals, brand ceremonies, workshops, and both public and private aviation events.",
       icon: <BsHeadsetVr />,
-      imageUrl: "/game-station.webp",
+      imageUrl: "/imgs/event-space.jpg",
     },
     {
-      title: "Simulator Lounge",
+      title: "Cinematheque - 50 sqm",
       description:
-        "Experience the thrill of flying with our state-of-the-art simulator (3 Simulators)",
+        "Dedicated to themed aviation films and educational or entertainment screenings.",
       icon: <PiAirplayFill />,
-      imageUrl: "/flight-simulator.webp",
+      imageUrl: "/imgs/cinematheque.webp",
+    },
+    {
+      title: "Game Station - 60 sqm",
+      description:
+        "Digital entertainment zone featuring aviation-related games and interactive experiences for youth and families.",
+      icon: <PiAirplayFill />,
+      imageUrl: "/imgs/game-station.jpg",
     },
   ];
 

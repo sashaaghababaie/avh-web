@@ -16,19 +16,19 @@ export default function Navbar() {
           </Link>
 
           {/* Nav Links */}
-          <div className="hidden md:flex space-x-8">
-            <Link
-              href="#facilities"
-              className="text-neutral-800 hover:text-neutral-700 transition-colors"
-            >
-              Facilities
-            </Link>
 
+          <div className="hidden md:flex space-x-8">
             <Link
               href="#services"
               className="text-neutral-800 hover:text-neutral-700 transition-colors"
             >
               Services
+            </Link>
+            <Link
+              href="#facilities"
+              className="text-neutral-800 hover:text-neutral-700 transition-colors"
+            >
+              Facilities
             </Link>
 
             <Link
@@ -38,10 +38,10 @@ export default function Navbar() {
               Membership
             </Link>
             <Link
-              href="#contact-us"
+              href="#app"
               className="text-neutral-800 hover:text-neutral-700 transition-colors"
             >
-              Contact Us
+              App
             </Link>
           </div>
 
@@ -89,18 +89,26 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="md:hidden pb-4 space-y-2 border-t border-neutral-700 mt-2 pt-2">
             <Link
+              href="#services"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-neutral-800 hover:text-neutral-700 py-2"
+            >
+              Services
+            </Link>
+            <Link
               href="#facilities"
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full block text-neutral-800 hover:text-neutral-700 py-2"
             >
               Facilities
             </Link>
+
             <Link
-              href="#aviation-community"
+              href="#services"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-neutral-800 hover:text-neutral-700 py-2"
             >
-              Aviation Community
+              Membership
             </Link>
             <Link
               href="#app"
@@ -108,20 +116,6 @@ export default function Navbar() {
               className="block text-neutral-800 hover:text-neutral-700 py-2"
             >
               App
-            </Link>
-            <Link
-              href="#membership"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-neutral-800 hover:text-neutral-700 py-2"
-            >
-              Membership
-            </Link>
-            <Link
-              href="#contact-us"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-neutral-800 hover:text-neutral-700 py-2"
-            >
-              Contact Us
             </Link>
           </div>
         )}

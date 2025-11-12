@@ -18,10 +18,11 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      <LogoSection />
+      {/* <LogoSection /> */}
       <FirstSection />
-      <FacilitiesSection />
       <ServicesSection />
+      <FacilitiesSection />
+
       <AerospacePavilionSection />
       <MapSection />
       <MobileApp />

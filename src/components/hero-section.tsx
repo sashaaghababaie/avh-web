@@ -1,12 +1,26 @@
+"use client";
+import { useWindowSize } from "@/hooks/useWindowSize";
+import { useLayoutEffect, useState } from "react";
+
 export default function HeroSection() {
+  const { width, height } = useWindowSize();
+
+  const [src, setSrc] = useState("/imgs/hero-vertical.webp");
+
+  useLayoutEffect(() => {
+    setSrc(
+      width < height ? "/imgs/hero-vertical.webp" : "/imgs/hero-landscape.jpg"
+    );
+  }, [width, height]);
+
   return (
     <section className="relative w-full min-h-screen flex items-start justify-center overflow-hidden pt-24">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="/AVH Facade-Hero.webp"
+          src={src}
           alt="Hero Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-bottom lg:object-center object-cover"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-white/5"></div>
@@ -14,15 +28,18 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1
-          className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-5 animate-slide-up-fade-in"
-          style={{ animationDelay: "0.2s" }}
-        >
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-3 animate-slide-up-fade-in">
           Aviation Hub
           {/* <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white ml-2">
             (AVH)
           </span> */}
         </h1>
+        <h2
+          style={{ animationDelay: "0.2s" }}
+          className="text-white/90 font-semibold text-xl animate-slide-up-fade-in mb-5"
+        >
+          Experience & Engagement
+        </h2>
         <p
           className="text-xl md:text-2xl text-neutral-200 max-w-2xl mx-auto font-normal animate-slide-up-fade-in"
           style={{ animationDelay: "0.4s" }}
