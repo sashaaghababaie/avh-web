@@ -29,7 +29,7 @@ const LogoSection = () => {
       {/* Title and Description Section */}
       <div className="sm:my-16 lg:my-20">
         <div className="flex items-center justify-center py-12 sm:py-16">
-          <img className="w-44" src="/avh-Logo.png" />
+          <img className="w-44" src="/avh-logo.png" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col gap-2 md:gap-4">

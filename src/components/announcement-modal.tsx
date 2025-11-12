@@ -39,7 +39,7 @@ export default function AnnouncementModal() {
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="absolute top-3 right-3 z-20 text-white hover:text-neutral-200 transition-colors bg-black/30 hover:bg-black/50 rounded-full p-1"
+          className="absolute cursor-pointer top-3 right-3 z-20 text-white hover:text-neutral-200 transition-colors bg-black/30 hover:bg-black/50 rounded-full p-1"
           aria-label="Close announcement"
         >
           <svg
