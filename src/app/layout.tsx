@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: siteConfig.siteName,
     template: `%s | ${siteConfig.siteName}`,
   },
-  publisher: "BloobPoint",
+  publisher: "BloomPoint",
   description: "Your premier destination for aviation excellence",
   openGraph: {
     title: siteConfig.siteName,
