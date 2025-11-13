@@ -35,7 +35,7 @@ export default function ContactUsSection() {
           className={`flex justify-center items-center animate-on-scroll ${
             sectionInView ? "visible" : ""
           }`}
-          style={{ transitionDelay: sectionInView ? "0.3s" : "0s" }}
+          style={{ transitionDelay: sectionInView ? "0.2s" : "0s" }}
         >
           <Link
             target="_blank"

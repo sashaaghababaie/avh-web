@@ -63,7 +63,6 @@ export default function ServicesSection() {
           className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-black text-center mb-12 md:mb-16 animate-on-scroll ${
             sectionInView ? "visible" : ""
           }`}
-          style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
         >
           AVH Services
         </h2>
@@ -73,19 +72,22 @@ export default function ServicesSection() {
             <div
               key={index}
               // className={`bg-linear-to-b p-px from-brand to-neutral-50 rounded-3xl shadow-md overflow-hidden hover:shadow-lg transition-shadow animate-on-scroll ${
-              className={`border border-neutral-50 hover:border rounded-tr-4xl rounded-bl-4xl hover:border-brand shadow-md overflow-hidden hover:shadow-lg transition-all animate-on-scroll duration-200 ${
+              className={`border hover:border rounded-tr-4xl rounded-bl-4xl border-brand overflow-hidden hover:shadow-md shadow-none  transition-all animate-on-scroll duration-200 ${
                 sectionInView ? "visible" : ""
               }`}
               style={{
-                transitionDelay: sectionInView ? `${0.3 + index * 0.1}s` : "0s",
+                transitionDelay: sectionInView ? "0.1s" : "0s",
               }}
+              // style={{
+              //   transitionDelay: sectionInView ? `${0.1 + index * 0.1}s` : "0s",
+              // }}
             >
               {/* Image */}
-              <div className="bg-white  h-full overflow-hidden flex flex-col">
+              <div className="bg-white h-full  overflow-hidden flex flex-col">
                 <img
                   src={service.imageUrl}
                   alt={service.title}
-                  className="w-full h-full object-cover"
+                  className="w-full aspect-square object-cover"
                 />
 
                 {/* Content */}

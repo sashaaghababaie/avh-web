@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-linear-to-t from-gray-800/60 to-black text-white py-8">
+    <footer className="bg-black text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
           {/* Logo Section */}
@@ -16,9 +16,11 @@ export default function Footer() {
               className="w-14"
             />
             {/* </div> */}
-            <h3 className="text-xl font-semibold mr-1">Aviation Hub</h3>
+            <h3 className="text-lg text-white/90 font-semibold mr-1">
+              Aviation Hub
+            </h3>
 
-            <p className="text-neutral-400">
+            <p className="text-neutral-400 text-sm">
               Your premier destination for aviation excellence
             </p>
           </div>

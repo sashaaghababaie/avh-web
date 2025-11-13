@@ -50,12 +50,12 @@ const MapSection = () => {
               style={{ backgroundColor: "#2e312f" }}
             >
               <div className="flex items-center">
-                <p className="pl-3">
+                <p className="pl-3 text-white">
                   Click the button to view the map in a larger size and display
                   more details.
                 </p>
                 <button
-                  className="bg-brand text-white rounded-tr-3xl rounded-bl-3xl px-4 py-2 whitespace-nowrap mr-3 rounded-sm ml-3 cursor-pointer hover:bg-brand/80 transition-all duration-150 ease-in-out"
+                  className="bg-brand text-white rounded-tr-xl rounded-bl-xl px-4 py-2 whitespace-nowrap mr-3 rounded-sm ml-3 cursor-pointer hover:bg-brand/80 transition-all duration-150 ease-in-out"
                   onClick={handleMapClick}
                 >
                   View Larger

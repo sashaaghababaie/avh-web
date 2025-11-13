@@ -44,7 +44,7 @@ const AerospacePavilionSection = () => {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-white/80 to-brand/70"></div>
       </div>
       {/* Title and Description Section */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,7 +57,7 @@ const AerospacePavilionSection = () => {
           Aerospace Pavilion
         </h2>
         <p
-          className={`text-base sm:text-lg md:text-xl text-neutral-600 text-center mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-4 animate-on-scroll ${
+          className={`text-base sm:text-lg md:text-xl text-neutral-900 text-center mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-4 animate-on-scroll ${
             sectionInView ? "visible" : ""
           }`}
           style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
@@ -78,7 +78,7 @@ const AerospacePavilionSection = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`border bg-white border-neutral-200 rounded-tr-2xl sm:rounded-tr-3xl lg:rounded-tr-4xl rounded-bl-2xl sm:rounded-bl-3xl lg:rounded-bl-4xl hover:border-brand shadow-md overflow-hidden hover:shadow-lg transition-all duration-200 animate-on-scroll ${
+            className={`border bg-white  rounded-tr-2xl sm:rounded-tr-3xl lg:rounded-tr-4xl rounded-bl-2xl sm:rounded-bl-3xl lg:rounded-bl-4xl border-brand shadow-md overflow-hidden hover:shadow-lg transition-all duration-200 animate-on-scroll ${
               sectionInView ? "visible" : ""
             }`}
             style={{

@@ -8,8 +8,13 @@ export default function HeroSection() {
   const [src, setSrc] = useState("/imgs/hero-vertical.webp");
 
   useLayoutEffect(() => {
+    const orientation =
+      width < height && width <= 1024 ? "portrait" : "landscape";
+
     setSrc(
-      width < height ? "/imgs/hero-vertical.webp" : "/imgs/hero-landscape.jpg"
+      orientation === "portrait"
+        ? "/imgs/hero-vertical.webp"
+        : "/imgs/hero-landscape.jpg"
     );
   }, [width, height]);
 
@@ -20,15 +25,15 @@ export default function HeroSection() {
         <img
           src={src}
           alt="Hero Background"
-          className="w-full h-full object-bottom lg:object-center object-cover"
+          className="w-full h-full object-bottom object-cover"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-white/5"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-3 animate-slide-up-fade-in">
+      <div className="relative mt-12 xl:mt-0 z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 className="text-5xl md:text-6xl font-semibold text-white mb-3 animate-slide-up-fade-in">
           Aviation Hub
           {/* <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white ml-2">
             (AVH)
@@ -36,18 +41,18 @@ export default function HeroSection() {
         </h1>
         <h2
           style={{ animationDelay: "0.2s" }}
-          className="text-white/90 font-semibold text-xl animate-slide-up-fade-in mb-5"
+          className="text-white/90 font-semibold text-3xl md:text-5xl animate-slide-up-fade-in mb-5"
         >
           Experience & Engagement
         </h2>
-        <p
-          className="text-xl md:text-2xl text-neutral-200 max-w-2xl mx-auto font-normal animate-slide-up-fade-in"
-          style={{ animationDelay: "0.4s" }}
+        {/* <p
+          className="w-full max-w-md text-base font-medium md:text-lg text-neutral-200 sm:max-w-lg md:max-w-lg lg:max-w-2xl mx-auto animate-slide-up-fade-in"
+          style={{ animationDelay: "0.3s" }}
         >
           Your premier destination for aviation excellence. Experience
           world-class facilities, premium services, and a community dedicated to
           the art of flight.
-        </p>
+        </p> */}
       </div>
     </section>
   );

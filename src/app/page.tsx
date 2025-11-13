@@ -7,11 +7,10 @@ import ContactUsSection from "@/components/contact-us-section";
 import MapSection from "@/components/map-section";
 import AerospacePavilionSection from "@/components/aerospace-pavilion-section";
 import ServicesSection from "@/components/services-section";
-import LogoSection from "@/components/logo-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Home | AVH",
 };
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
       <FirstSection />
       <ServicesSection />
       <FacilitiesSection />
-
       <AerospacePavilionSection />
       <MapSection />
       <MobileApp />

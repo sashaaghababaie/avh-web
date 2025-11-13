@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import { useInView } from "@/hooks/useInView";
+import { ImageSwiper } from "./image-swiper";
 
 export default function MobileApp() {
   const [currentSlide, setCurrentSlide] = useState(0);
+
   const { ref: sectionRef, isInView: sectionInView } = useInView();
 
   const slides = [
@@ -42,6 +44,7 @@ export default function MobileApp() {
       id="app"
       className="py-12 sm:py-16 lg:py-20 bg-neutral-50"
     >
+      <div></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
           className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-black text-center mb-12 md:mb-16 animate-on-scroll ${
@@ -63,55 +66,21 @@ export default function MobileApp() {
             <div className="relative w-full sm:w-96 md:w-[500px] mx-auto">
               {/* Image Container */}
               <div
-                className={`w-full sm:w-96 md:w-[500px] aspect-square rounded-3xl overflow-hidden shadow-lg`}
+                className={`w-84 sm:w-96 md:w-[500px] aspect-square rounded-3xl overflow-hidden shadow-lg`}
               >
-                <div className="w-full h-full flex items-center justify-center text-white text-4xl">
-                  <img
+                <div className="w-full h-full  text-white text-4xl">
+                  {/* <img
                     className="object-cover w-full h-full"
                     src={slides[currentSlide].image}
+                  /> */}
+                  <ImageSwiper
+                    setCurrentSlide={setCurrentSlide}
+                    images={["/app1.webp", "/app2.webp", "/app2.webp"]}
                   />
                 </div>
               </div>
 
               {/* Navigation Arrows */}
-              <button
-                onClick={prevSlide}
-                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 rounded-full hover:bg-white shadow-lg  p-2 sm:p-3 transition-all z-10"
-                aria-label="Previous slide"
-              >
-                <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-black"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
-              </button>
-              <button
-                onClick={nextSlide}
-                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-lg rounded-full p-2 sm:p-3 transition-all z-10"
-                aria-label="Next slide"
-              >
-                <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-black"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
 
               {/* Slide Indicators */}
               <div className="flex justify-center gap-2 mt-4">
@@ -150,5 +119,3 @@ export default function MobileApp() {
     </section>
   );
 }
-
-const slides = [];

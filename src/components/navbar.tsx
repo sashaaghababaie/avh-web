@@ -7,8 +7,8 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-md bg-brand/10 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -17,7 +17,7 @@ export default function Navbar() {
 
           {/* Nav Links */}
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex font-semibold space-x-8">
             <Link
               href="#services"
               className="text-neutral-800 hover:text-neutral-700 transition-colors"
@@ -87,18 +87,18 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-4 space-y-2 border-t border-neutral-700 mt-2 pt-2">
+          <div className="md:hidden pb-4 font-semibold space-y-2 border-t border-neutral-700 mt-2 pt-2">
             <Link
               href="#services"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-neutral-800 hover:text-neutral-700 py-2"
+              className="block text-black/80 hover:text-black/50 py-2"
             >
               Services
             </Link>
             <Link
               href="#facilities"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full block text-neutral-800 hover:text-neutral-700 py-2"
+              className="block text-black/80 hover:text-black/50 py-2"
             >
               Facilities
             </Link>
@@ -106,14 +106,14 @@ export default function Navbar() {
             <Link
               href="#services"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-neutral-800 hover:text-neutral-700 py-2"
+              className="block text-black/80 hover:text-black/50 py-2"
             >
               Membership
             </Link>
             <Link
               href="#app"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-neutral-800 hover:text-neutral-700 py-2"
+              className="block text-black/80 hover:text-black/50 py-2"
             >
               App
             </Link>

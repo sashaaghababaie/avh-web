@@ -2,8 +2,12 @@
 
 import { BiSolidCameraMovie, BiSolidDish } from "react-icons/bi";
 import { BsHeadsetVr } from "react-icons/bs";
-import { PiAirplayFill } from "react-icons/pi";
-import { MdChair, MdDoorFront } from "react-icons/md";
+import {
+  PiAirplayFill,
+  PiGameController,
+  PiGameControllerBold,
+} from "react-icons/pi";
+import { MdChair, MdCoffee, MdDoorFront } from "react-icons/md";
 import { RiPresentationFill } from "react-icons/ri";
 import { useInView } from "@/hooks/useInView";
 
@@ -12,52 +16,54 @@ export default function FacilitiesSection() {
 
   const facilities = [
     {
-      title: "Café - 100 sqm",
+      title: "Café",
       description:
         "A cozy aviation-themed café serving beverages and light meals; also acts as a social interaction hub.",
-      icon: <MdChair />,
+      icon: <MdCoffee />,
       imageUrl: "/imgs/cafe.jpg",
     },
     {
-      title: "Restaurant - 100 sqm",
+      title: "Restaurant",
       description:
         "Full-service dining area offering aviation-inspired menus and themed culinary experiences.",
-      icon: <RiPresentationFill />,
+      icon: <BiSolidDish />,
+
       imageUrl: "/imgs/restaurant.jpg",
     },
     {
-      title: "Meeting Room - 60 sqm",
+      title: "Meeting Room",
       description:
         "Shared by different sections: 2 tables for the restaurant, 2 for the café, and 1 for the simulator lounge. Designed for business gatherings, private sessions, and group discussions",
-      icon: <BiSolidDish />,
+      icon: <RiPresentationFill />,
       imageUrl: "/imgs/meeting.jpg",
     },
     {
-      title: "Simulation Lounge - 100 sqm",
+      title: "Simulation Lounge",
       description:
         "Equipped with 3 high-end flight simulators, providing immersive aviation experiences and training sessions.",
-      icon: <BiSolidCameraMovie />,
+      icon: <BsHeadsetVr />,
       imageUrl: "/imgs/flight-simulator.webp",
     },
     {
-      title: "Event Space - 80 sqm",
+      title: "Event Space",
       description:
         "Multi-purpose space for festivals, brand ceremonies, workshops, and both public and private aviation events.",
-      icon: <BsHeadsetVr />,
+      icon: <PiAirplayFill />,
       imageUrl: "/imgs/event-space.jpg",
     },
     {
-      title: "Cinematheque - 50 sqm",
+      title: "Cinematheque",
       description:
         "Dedicated to themed aviation films and educational or entertainment screenings.",
-      icon: <PiAirplayFill />,
+
+      icon: <BiSolidCameraMovie />,
       imageUrl: "/imgs/cinematheque.webp",
     },
     {
-      title: "Game Station - 60 sqm",
+      title: "Game Station",
       description:
         "Digital entertainment zone featuring aviation-related games and interactive experiences for youth and families.",
-      icon: <PiAirplayFill />,
+      icon: <PiGameControllerBold />,
       imageUrl: "/imgs/game-station.jpg",
     },
   ];
@@ -66,14 +72,14 @@ export default function FacilitiesSection() {
     <section
       id="facilities"
       ref={sectionRef}
-      className="py-12 sm:py-16 lg:py-20 bg-neutral-50"
+      className="py-12 sm:py-16 lg:py-20 bg-linear-to-br to-brand/30 from-neutral-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
           className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-black text-center mb-12 md:mb-16 animate-on-scroll ${
             sectionInView ? "visible" : ""
           }`}
-          style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
+          // style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
         >
           AVH Facilities & Spaces
         </h2>
@@ -83,19 +89,19 @@ export default function FacilitiesSection() {
             <div
               key={index}
               // className={`bg-linear-to-b p-px from-brand to-neutral-50 rounded-3xl shadow-md overflow-hidden hover:shadow-lg transition-shadow animate-on-scroll ${
-              className={`border border-neutral-50 hover:border rounded-tr-4xl rounded-bl-4xl hover:border-brand shadow-md overflow-hidden hover:shadow-lg transition-all animate-on-scroll duration-200 ${
+              className={`border hover:border rounded-tr-4xl rounded-bl-4xl border-brand hover:shadow-md overflow-hidden shadow-none transition-all animate-on-scroll duration-200 ${
                 sectionInView ? "visible" : ""
               }`}
               style={{
-                transitionDelay: sectionInView ? `${0.3 + index * 0.1}s` : "0s",
+                transitionDelay: sectionInView ? "0.1s" : "0s",
               }}
             >
               {/* Image */}
-              <div className="bg-white  h-full overflow-hidden flex flex-col">
+              <div className="bg-white h-full overflow-hidden flex flex-col">
                 <img
                   src={facility.imageUrl}
                   alt={facility.title}
-                  className="w-full h-full object-cover"
+                  className="w-full aspect-square object-cover"
                 />
 
                 {/* Content */}

@@ -12,17 +12,17 @@ export default function FirstSection() {
           className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-black text-center mb-12 md:mb-16 animate-on-scroll ${
             sectionInView ? "visible" : ""
           }`}
-          // style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
+          style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
         >
           What is <span className="font-bold">AV</span>
           <span className="font-bold text-brand">H </span>?
         </h2>
 
         {/* First Row: Text Left, Image Right */}
-        <div className="mb-16 md:mb-24">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div>
+          <div className="flex flex-col items-center gap-8 md:gap-12">
             <div
-              className={`flex-1 order-2 md:order-1 animate-on-scroll ${
+              className={`flex-1 order-1 md:order-2 animate-on-scroll ${
                 sectionInView ? "visible" : ""
               }`}
               style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
@@ -30,35 +30,37 @@ export default function FirstSection() {
               {/* <h2 className="text-xl md:text-2xl font-semibold text-neutral-700 mb-4">
                 Experience & Engagement
               </h2> */}
-              <p className="text-lg sm:text-xl text-neutral-700 leading-relaxed">
+              <p className="text-base font-semibold sm:text-lg max-w-auto md:max-w-2xl text-black/70 leading-relaxed">
                 {/* <span className="font-bold">AV</span>
                 <span className="font-bold text-brand">H </span> */}
-                The Aviation Experience and Engagement Center was created to
-                fill a long-standing gap in Iran’s aviation community — the lack
-                of a shared space for enthusiasts, professionals, and newcomers
-                to connect. Previously limited to occasional events, the
-                community needed a place to learn, engage, and grow together.
-                This center was founded to foster conversation, hands-on
-                learning, and collaboration among all aviation roles. It
-                transforms interaction into culture and experience into
-                knowledge, serving as both a social and professional hub where
-                the future of Iranian aviation can take off.
+                The{" "}
+                <span className="text-black font-bold">
+                  Aviation Experience and Engagement Center{" "}
+                </span>
+                was created to fill a long-standing gap in Iran’s aviation
+                community; the lack of a shared space for enthusiasts,
+                professionals, and newcomers to connect. Previously limited to
+                occasional events, the community needed a place to learn,
+                engage, and grow together. This center was founded to foster
+                conversation, hands-on learning, and collaboration among all
+                aviation roles. It transforms interaction into culture and
+                experience into knowledge, serving as both a social and
+                professional hub where the future of Iranian aviation can take
+                off.
               </p>
             </div>
             <div
-              className={`flex-1 order-1 md:order-2 animate-on-scroll ${
+              className={`flex-1 order-1 animate-on-scroll ${
                 sectionInView ? "visible" : ""
               }`}
-              // style={{ transitionDelay: sectionInView ? "0.5s" : "0s" }}
+              style={{ transitionDelay: sectionInView ? "0.2s" : "0s" }}
             >
-              <div className="w-full h-64 sm:h-80 md:h-96 bg-neutral-200 rounded-3xl overflow-hidden">
-                <div className="w-full h-full bg-linear-to-br from-brand to-brand/60 flex items-center justify-center text-white text-2xl">
-                  <img
-                    src="/lobby.jpg"
-                    alt="AVH Interior-01"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              <div className="w-full max-w-2xl bg-neutral-200 rounded-3xl overflow-hidden">
+                <img
+                  src="/lobby.jpg"
+                  alt="AVH Interior-01"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

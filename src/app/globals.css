@@ -29,10 +29,12 @@ body {
 
 @keyframes slideUpFadeIn {
   from {
+    filter: blur(10px);
     opacity: 0;
     transform: translateY(60px);
   }
   to {
+    filter: blur(0px);
     opacity: 1;
     transform: translateY(0);
   }

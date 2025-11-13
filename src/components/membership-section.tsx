@@ -17,7 +17,7 @@ export default function MembershipSection() {
       ],
     },
     {
-      name: "Premium",
+      name: "Professional",
       price: "$100",
       period: "/month",
       features: [
@@ -28,7 +28,7 @@ export default function MembershipSection() {
       ],
     },
     {
-      name: "Elite",
+      name: "Club",
       price: "$400",
       period: "/month",
       features: [
@@ -40,7 +40,7 @@ export default function MembershipSection() {
       ],
     },
     {
-      name: "Enterprise",
+      name: "Companies",
       price: "$600",
       period: "/month",
       features: [
@@ -87,7 +87,7 @@ export default function MembershipSection() {
           }`}
           style={{ transitionDelay: sectionInView ? "0.2s" : "0s" }}
         >
-          Choose the perfect membership plan that suits your aviation needs
+          Choose the perfect membership plan that suits your aviation vibe
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
@@ -102,11 +102,11 @@ export default function MembershipSection() {
               }}
             >
               <div className="bg-linear-to-b from-gray-100 to-gray-50 p-10 rounded-tr-4xl rounded-bl-4xl rounded-lg h-full flex flex-col">
-                <h3 className="text-2xl sm:text-3xl font-bold text-black mb-2">
+                <h3 className="text-2xl sm:text-2xl font-bold text-black/70 mb-2">
                   {plan.name}
                 </h3>
                 <div className="mb-6">
-                  <span className="text-2xl sm:text-3xl font-bold text-black">
+                  <span className="text-2xl  sm:text-3xl font-bold text-black/90">
                     {plan.price}
                   </span>
                   {plan.period && (
@@ -134,7 +134,7 @@ export default function MembershipSection() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full bg-brand hover:bg-brand/80 cursor-pointer text-white font-semibold py-3 px-6 rounded-tr-3xl rounded-bl-3xl transition-colors mt-auto">
+                <button className="w-full bg-brand hover:bg-brand/80 cursor-pointer text-white font-semibold py-3 px-6 rounded-tr-xl rounded-bl-xl transition-colors mt-auto">
                   Select Plan
                 </button>
               </div>
