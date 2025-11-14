@@ -28,20 +28,8 @@ export default function MembershipSection() {
       ],
     },
     {
-      name: "Club",
-      price: "$400",
-      period: "/month",
-      features: [
-        "All premium features",
-        "24/7 dedicated support",
-        "Private hangar access",
-        "Exclusive events",
-        "Personal concierge",
-      ],
-    },
-    {
       name: "Companies",
-      price: "$600",
+      price: "$400",
       period: "/month",
       features: [
         "All elite features",
@@ -49,6 +37,18 @@ export default function MembershipSection() {
         "Dedicated account manager",
         "Volume discounts",
         "Tailored packages",
+      ],
+    },
+    {
+      name: "AVH Club",
+      price: "$600",
+      period: "/month",
+      features: [
+        "All premium features",
+        "24/7 dedicated support",
+        "Private hangar access",
+        "Exclusive events",
+        "Personal concierge",
       ],
     },
   ];
@@ -79,7 +79,7 @@ export default function MembershipSection() {
           }`}
           style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
         >
-          Membership Plans
+          Memberships
         </h2>
         <p
           className={`text-lg sm:text-xl text-neutral-600 text-center mb-12 md:mb-16 max-w-2xl mx-auto animate-on-scroll ${

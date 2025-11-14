@@ -39,7 +39,7 @@ export default function ContactUsSection() {
         >
           <Link
             target="_blank"
-            href="https://www.linkedin.com/in/avh-aviation-community-hub-676105388/"
+            href="https://www.linkedin.com/in/avh-aviation-hub-676105388?trk=blended-typeahead"
             className="text-neutral-700 hover:text-brand transition-colors"
             aria-label="Visit our LinkedIn page"
           >

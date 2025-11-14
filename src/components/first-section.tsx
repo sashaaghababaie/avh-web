@@ -1,13 +1,14 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
+import { ImageSwiper } from "./image-swiper";
 
 export default function FirstSection() {
   const { ref: sectionRef, isInView: sectionInView } = useInView();
 
   return (
     <section ref={sectionRef} className="py-12 sm-py-16 lg:py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <h2
           className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-black text-center mb-12 md:mb-16 animate-on-scroll ${
             sectionInView ? "visible" : ""
@@ -20,9 +21,9 @@ export default function FirstSection() {
 
         {/* First Row: Text Left, Image Right */}
         <div>
-          <div className="flex flex-col items-center gap-8 md:gap-12">
+          <div className="flex flex-col w-full items-center gap-8 md:gap-12">
             <div
-              className={`flex-1 order-1 md:order-2 animate-on-scroll ${
+              className={`flex  w-full justify-center order-1 md:order-2 animate-on-scroll ${
                 sectionInView ? "visible" : ""
               }`}
               style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
@@ -50,16 +51,41 @@ export default function FirstSection() {
               </p>
             </div>
             <div
-              className={`flex-1 order-1 animate-on-scroll ${
+              className={`flex-1 order-1 w-full animate-on-scroll ${
                 sectionInView ? "visible" : ""
               }`}
               style={{ transitionDelay: sectionInView ? "0.2s" : "0s" }}
             >
-              <div className="w-full max-w-2xl bg-neutral-200 rounded-3xl overflow-hidden">
+              <div className="flex justify-center w-full md:hidden h-96">
+                <ImageSwiper
+                  options={{
+                    slidesPerView: 1.2,
+                    centeredSlides: true,
+                    spaceBetween: 20,
+                    navigation: false,
+                  }}
+                  images={[
+                    "/imgs/cafe-1.webp",
+                    "/imgs/lobby.webp",
+                    "/imgs/cafe-2.webp",
+                  ]}
+                />
+              </div>
+              <div className="hidden md:flex w-full aspect-4/1  gap-2 bg-neutral-200 rounded-3xl overflow-hidden">
                 <img
-                  src="/lobby.jpg"
+                  src="/imgs/cafe-1.webp"
                   alt="AVH Interior-01"
-                  className="w-full h-full object-cover"
+                  className="flex-1 object-cover"
+                />
+                <img
+                  src="/imgs/lobby.webp"
+                  alt="AVH Interior-01"
+                  className="flex-1 object-cover"
+                />
+                <img
+                  src="/imgs/cafe-2.webp"
+                  alt="AVH Interior-01"
+                  className="flex-1 object-cover"
                 />
               </div>
             </div>

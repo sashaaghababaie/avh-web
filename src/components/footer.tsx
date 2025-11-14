@@ -70,7 +70,7 @@ export default function Footer() {
             <div className="mt-3 w-fit">
               <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/avh-aviation-community-hub-676105388/"
+                href="https://www.linkedin.com/in/avh-aviation-hub-676105388?trk=blended-typeahead"
                 className="text-neutral-400 hover:text-brand transition-colors"
               >
                 <FaLinkedin className="text-xl " />

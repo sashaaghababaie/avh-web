@@ -28,15 +28,15 @@ export default function MobileApp() {
         "Easily reserve lounges, conference rooms, and other facilities through our intuitive mobile app.",
       image: "/app3.webp",
     },
+    {
+      title: "Aviation Talks & Seminars",
+      description:
+        "Explore and book inspiring aviation talks and seminars, attend live or online, anywhere, anytime.",
+      image: "/app4.webp",
+    },
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+  const swiperImages = slides.map((s) => s.image);
 
   return (
     <section
@@ -44,7 +44,6 @@ export default function MobileApp() {
       id="app"
       className="py-12 sm:py-16 lg:py-20 bg-neutral-50"
     >
-      <div></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
           className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-black text-center mb-12 md:mb-16 animate-on-scroll ${
@@ -75,7 +74,7 @@ export default function MobileApp() {
                   /> */}
                   <ImageSwiper
                     setCurrentSlide={setCurrentSlide}
-                    images={["/app1.webp", "/app2.webp", "/app2.webp"]}
+                    images={swiperImages}
                   />
                 </div>
               </div>
