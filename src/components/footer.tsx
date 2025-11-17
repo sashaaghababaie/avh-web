@@ -51,14 +51,14 @@ export default function Footer() {
                 >
                   Membership
                 </Link>
-                {/* <Link
+                <Link
                   href="/pitch/avh-pitch-deck.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-neutral-400 hover:text-white transition-colors w-fit"
                 >
                   AVH Pitch Deck
-                </Link> */}
+                </Link>
               </li>
             </ul>
           </div>
