@@ -16,7 +16,7 @@ export default function FacilitiesSection() {
       description:
         "A cozy aviation-themed café serving beverages and light meals; also acts as a social interaction hub.",
       icon: <MdCoffee />,
-      imageUrl: "/plans/cafe.webp",
+      imageUrl: "/plans/cafe-p.webp",
     },
     {
       title: "Restaurant",
@@ -24,7 +24,7 @@ export default function FacilitiesSection() {
         "Full-service dining area offering aviation-inspired menus and themed culinary experiences.",
       icon: <BiSolidDish />,
 
-      imageUrl: "/plans/restaurant.webp",
+      imageUrl: "/plans/restaurant-p.webp",
     },
     {
       title: "Meeting Room",
@@ -32,28 +32,28 @@ export default function FacilitiesSection() {
         "Shared by different sections: 2 tables for the restaurant, 2 for the café, and 1 for the simulator lounge. Designed for business gatherings, private sessions, and group discussions",
 
       icon: <RiPresentationFill />,
-      imageUrl: "/plans/meeting.webp",
+      imageUrl: "/plans/meeting-p.webp",
     },
     {
       title: "Aerospace Pavillion",
       description:
         "Dedicated space for showcasing aerospace products and technologies, model-making activities, airplane owner gatherings, and specialized exhibitions and events.",
       icon: <MdMeetingRoom />,
-      imageUrl: "/plans/pavillion.webp",
+      imageUrl: "/plans/pavillion-p.webp",
     },
     {
       title: "Simulation Lounge",
       description:
         "Equipped with 3 high-end flight simulators, providing immersive aviation experiences and training sessions.",
       icon: <BsHeadsetVr />,
-      imageUrl: "/plans/simulator.webp",
+      imageUrl: "/plans/simulator-p.webp",
     },
     {
       title: "Event Space",
       description:
         "Multi-purpose space for festivals, brand ceremonies, workshops, and both public and private aviation events.",
       icon: <PiAirplayFill />,
-      imageUrl: "/plans/event.webp",
+      imageUrl: "/plans/event-p.webp",
     },
     {
       title: "Cinematheque",
@@ -61,7 +61,7 @@ export default function FacilitiesSection() {
         "Dedicated to themed aviation films and educational or entertainment screenings.",
 
       icon: <BiSolidCameraMovie />,
-      imageUrl: "/plans/cinematheque.webp",
+      imageUrl: "/plans/cinematheque-p.webp",
     },
     {
       title: "Game Station",
@@ -69,7 +69,7 @@ export default function FacilitiesSection() {
         "Digital entertainment zone featuring aviation-related games and interactive experiences for youth and families.",
       icon: <PiGameControllerBold />,
 
-      imageUrl: "/plans/game.webp",
+      imageUrl: "/plans/game-p.webp",
     },
   ];
 
