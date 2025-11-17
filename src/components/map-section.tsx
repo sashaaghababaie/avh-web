@@ -13,7 +13,7 @@ const MapSection = () => {
     <section
       ref={sectionRef}
       id="aviation-community"
-      className="pt-12 sm:pt-16 lg:pt-20 bg-brand/90"
+      className="pt-12 sm:pt-16 lg:pt-20 -bg-linear-45 from-brand/30 to-brand"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
@@ -51,8 +51,7 @@ const MapSection = () => {
             >
               <div className="flex items-center">
                 <p className="pl-3 text-white">
-                  Click the button to view the map in a larger size and display
-                  more details.
+                  See the map in a larger size with more details.
                 </p>
                 <button
                   className="bg-brand text-white rounded-tr-xl rounded-bl-xl px-4 py-2 whitespace-nowrap mr-3 rounded-sm ml-3 cursor-pointer hover:bg-brand/80 transition-all duration-150 ease-in-out"

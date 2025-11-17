@@ -104,7 +104,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="#services"
+              href="#membership"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-black/80 hover:text-black/50 py-2"
             >

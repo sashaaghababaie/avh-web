@@ -51,6 +51,14 @@ export default function Footer() {
                 >
                   Membership
                 </Link>
+                {/* <Link
+                  href="/pitch/avh-pitch-deck.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-400 hover:text-white transition-colors w-fit"
+                >
+                  AVH Pitch Deck
+                </Link> */}
               </li>
             </ul>
           </div>
@@ -60,20 +68,21 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="border-[0.5px] border-neutral-600 w-40 mb-3" />
 
-            <Link
+            {/* <Link
               href="#contact-us"
               className="text-neutral-400 hover:text-white transition-colors"
             >
               Contact Us
-            </Link>
+            </Link> */}
 
             <div className="mt-3 w-fit">
               <Link
                 target="_blank"
                 href="https://www.linkedin.com/in/avh-aviation-hub-676105388?trk=blended-typeahead"
-                className="text-neutral-400 hover:text-brand transition-colors"
+                className="text-neutral-400 flex gap- items-center hover:text-brand transition-colors"
               >
-                <FaLinkedin className="text-xl " />
+                Linked
+                <FaLinkedin className="inline text-xl " />
               </Link>
             </div>
           </div>

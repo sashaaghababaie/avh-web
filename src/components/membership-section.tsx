@@ -57,24 +57,24 @@ export default function MembershipSection() {
     <section
       id="membership"
       ref={sectionRef}
-      className="py-12 sm:py-16 lg:py-20 relative"
+      className="py-12 sm:py-16 lg:py-20 relative -bg-linear-45 from-brand/10 to-brand"
     >
       {/* Background Image */}
-      <div
+      {/* <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80')",
         }}
       >
-        {/* Overlay */}
+
         <div className="absolute inset-0 bg-white/70"></div>
-      </div>
+      </div> */}
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
-          className={`text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center mb-4 animate-on-scroll ${
+          className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center mb-4 animate-on-scroll ${
             sectionInView ? "visible" : ""
           }`}
           style={{ transitionDelay: sectionInView ? "0.1s" : "0s" }}
@@ -82,7 +82,7 @@ export default function MembershipSection() {
           Memberships
         </h2>
         <p
-          className={`text-lg sm:text-xl text-neutral-600 text-center mb-12 md:mb-16 max-w-2xl mx-auto animate-on-scroll ${
+          className={`text-lg sm:text-xl text-white/80 text-center mb-12 md:mb-16 max-w-2xl mx-auto animate-on-scroll ${
             sectionInView ? "visible" : ""
           }`}
           style={{ transitionDelay: sectionInView ? "0.2s" : "0s" }}

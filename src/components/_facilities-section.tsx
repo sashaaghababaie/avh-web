@@ -17,22 +17,29 @@ export default function FacilitiesSection() {
         "A cozy aviation-themed café serving beverages and light meals; also acts as a social interaction hub.",
       icon: <MdCoffee />,
       imageUrl: "/plans/cafe.webp",
+      className:
+        "scale-150 w-full relative -top-1/4 -left-[39%] aspect-square object-cover",
+      overlays: "all",
     },
     {
       title: "Restaurant",
       description:
         "Full-service dining area offering aviation-inspired menus and themed culinary experiences.",
       icon: <BiSolidDish />,
-
+      className:
+        "scale-150 w-full relative -top-1/4 left-[40%] aspect-square object-cover",
       imageUrl: "/plans/restaurant.webp",
+      overlays: "all",
     },
     {
       title: "Meeting Room",
       description:
         "Shared by different sections: 2 tables for the restaurant, 2 for the café, and 1 for the simulator lounge. Designed for business gatherings, private sessions, and group discussions",
-
       icon: <RiPresentationFill />,
       imageUrl: "/plans/meeting.webp",
+      className:
+        "scale-90 w-full relative top-0 left-0 aspect-square object-cover",
+      overlays: "bottom",
     },
     {
       title: "Aerospace Pavillion",
@@ -40,6 +47,9 @@ export default function FacilitiesSection() {
         "Dedicated space for showcasing aerospace products and technologies, model-making activities, airplane owner gatherings, and specialized exhibitions and events.",
       icon: <MdMeetingRoom />,
       imageUrl: "/plans/pavillion.webp",
+      className:
+        "scale-90 w-full relative top-0 left-0 aspect-square object-cover",
+      overlays: "bottom",
     },
     {
       title: "Simulation Lounge",
@@ -47,6 +57,9 @@ export default function FacilitiesSection() {
         "Equipped with 3 high-end flight simulators, providing immersive aviation experiences and training sessions.",
       icon: <BsHeadsetVr />,
       imageUrl: "/plans/simulator.webp",
+      className:
+        "scale-150 w-full relative -top-1/6 -left-[39%] aspect-square object-cover",
+      overlays: "all",
     },
     {
       title: "Event Space",
@@ -54,22 +67,29 @@ export default function FacilitiesSection() {
         "Multi-purpose space for festivals, brand ceremonies, workshops, and both public and private aviation events.",
       icon: <PiAirplayFill />,
       imageUrl: "/plans/event.webp",
+      className:
+        "scale-150 w-full relative -top-1/67 left-[42%] aspect-square object-cover",
+      overlays: "all",
     },
     {
       title: "Cinematheque",
       description:
         "Dedicated to themed aviation films and educational or entertainment screenings.",
-
+      className:
+        "relative scale-200 left-2/3 w-full aspect-square object-cover",
       icon: <BiSolidCameraMovie />,
       imageUrl: "/plans/cinematheque.webp",
+      overlays: "all",
     },
     {
       title: "Game Station",
       description:
         "Digital entertainment zone featuring aviation-related games and interactive experiences for youth and families.",
       icon: <PiGameControllerBold />,
-
+      className:
+        "relative scale-200 -left-2/3 w-full aspect-square object-cover",
       imageUrl: "/plans/game.webp",
+      overlays: "all",
     },
   ];
 
@@ -104,10 +124,23 @@ export default function FacilitiesSection() {
               {/* Image */}
               <div className="bg-white h-full overflow-hidden flex flex-col">
                 <div className="relative w-full overflow-hidden">
+                  {facility.overlays === "all" && (
+                    <div
+                      className="absolute z-10 top-0 left-0 w-full h-full
+  bg-[linear-gradient(to_bottom,white,transparent_25%),linear-gradient(to_top,white,transparent_25%),linear-gradient(to_left,white,transparent_25%),linear-gradient(to_right,white,transparent_25%)]"
+                    />
+                  )}
+                  {facility.overlays === "bottom" && (
+                    <div
+                      className="absolute z-10 top-0 left-0 w-full h-full
+  bg-[linear-gradient(to_top,white,transparent_30%)]"
+                    />
+                  )}
+
                   <img
                     src={facility.imageUrl}
                     alt={facility.title}
-                    className={"w-full aspect-square object-cover"}
+                    className={` ${facility.className}`}
                   />
                 </div>
 
